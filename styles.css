@@ -5,4 +5,39 @@
     --DarkGrayishRed: hsl(0, 6%, 24%);
     /*fonts*/
     --FontSize: 16px;
+    --font: 'Josefin Sans';
+    --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--FontSize);
+    text-align: center;
+    background: var(--gradient1);
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.home__text h1 {
+    font-weight: 300;
+}
+
+.home__text h1 strong {
+    font-weight: 600;
+}
+
+.home__text p {
+    font-weight: 300;
+}
+
+.home__input {
+    border: 1px solid
+}
+
+.home__input input {
+    border: none;
 }
