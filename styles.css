@@ -15,11 +15,34 @@ body {
     font-size: var(--FontSize);
     text-align: center;
     background: var(--gradient1);
+    color: var(--DarkGrayishRed);
+    font-weight: 300;
+    margin: 0;
 }
 
 .home {
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.home__logo {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.home__logo img {
+    width: 30%;
+}
+
+.home__hero {
+    width: 100%;
+}
+
+.home__text {
+    max-width: 300px;
+    margin: auto;
 }
 
 .home__text h1 {
@@ -30,14 +53,37 @@ body {
     font-weight: 600;
 }
 
-.home__text p {
-    font-weight: 300;
-}
-
 .home__input {
-    border: 1px solid
+    border: 1px solid var(--DarkGrayishRed);
+    border-radius: 20px;
+    height: 35px;
+    width: 80%;
+    position: relative;
+    margin: auto;
 }
 
 .home__input input {
     border: none;
+    height: 30px;
+    width: 90%;
+}
+
+.home__input article img {
+    height: 20px;
+}
+
+.home__input article {
+    background: var(--gradient2);
+    border-radius: 20px;
+    height: 35px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -5%;
+    top: 0;
+}
+
+
 }
