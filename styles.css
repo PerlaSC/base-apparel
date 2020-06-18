@@ -22,31 +22,23 @@ body {
 
 .home {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
-    grid-template-areas: "logo img" "text img" "input img";
 }
 
 .home__logo {
     display: flex;
     justify-content: flex-start;
     padding: 20px;
-    grid-area: logo;
 }
 
 .home__logo img {
     width: 100px;
 }
 
-.home__hero {
-    grid-area: img;
-}
-
 .home__text {
     max-width: 300px;
     margin: auto;
-    grid-area: text;
 }
 
 .home__text h1 {
@@ -73,7 +65,6 @@ body {
     margin: auto;
     background-color: var(--gradient1);
     margin-bottom: 40px;
-    grid-area: input;
 }
 
 .home__input input {
