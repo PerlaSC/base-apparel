@@ -22,35 +22,46 @@ body {
 
 .home {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
+    grid-template-areas: "logo img" "text img" "input img";
 }
 
 .home__logo {
     display: flex;
     justify-content: flex-start;
     padding: 20px;
+    grid-area: logo;
 }
 
 .home__logo img {
-    width: 30%;
+    width: 100px;
 }
 
 .home__hero {
-    width: 100%;
+    grid-area: img;
 }
 
 .home__text {
     max-width: 300px;
     margin: auto;
+    grid-area: text;
 }
 
 .home__text h1 {
     font-weight: 300;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 .home__text h1 strong {
-    font-weight: 600;
+    font-weight: 400;
+}
+
+.home__text p {
+    font-size: 0.9em;
 }
 
 .home__input {
@@ -60,12 +71,19 @@ body {
     width: 80%;
     position: relative;
     margin: auto;
+    background-color: var(--gradient1);
+    margin-bottom: 40px;
+    grid-area: input;
 }
 
 .home__input input {
     border: none;
     height: 30px;
-    width: 90%;
+    width: 85%;
+    color: var(--DarkGrayishRed);
+    font-weight: 300;
+    font-family: var(--font);
+    background: transparent;
 }
 
 .home__input article img {
@@ -83,7 +101,5 @@ body {
     position: absolute;
     right: -5%;
     top: 0;
-}
-
-
+    cursor: pointer;
 }
