@@ -21,7 +21,7 @@
     }
     .home__logo {
         grid-area: logo;
-        margin-top: 50px;
+        margin-top: 55px;
         padding: 0;
     }
     .home__hero {
