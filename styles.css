@@ -23,17 +23,26 @@ body {
 .home {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 20px 2fr 2fr 1fr;
     grid-gap: 20px;
+    margin-top: 20px;
 }
 
 .home__logo {
     display: flex;
     justify-content: flex-start;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 .home__logo img {
     width: 100px;
+}
+
+.home__hero {
+    background-image: url('images/hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .home__text {

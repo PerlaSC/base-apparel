@@ -1,0 +1,30 @@
+@media (min-width: 1024px) {
+    body {
+        text-align: start;
+        overflow: hidden;
+    }
+    .home {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: px 4fr 1fr;
+        grid-gap: 0px;
+        grid-template-areas: "logo img" "text img" "input img";
+    }
+    .home__logo {
+        grid-area: logo;
+    }
+    .home__hero {
+        grid-area: img;
+        background-image: url('images/hero-desktop.jpg');
+        height: 100vh;
+    }
+    .home__text {
+        max-width: 300px;
+        margin: auto;
+        grid-area: text;
+    }
+    .home__input {
+        grid-area: input;
+    }
+}
