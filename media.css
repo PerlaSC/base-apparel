@@ -3,24 +3,35 @@
         text-align: start;
         overflow: hidden;
     }
+    .container {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .logo {
+        display: flex;
+        justify-content: start;
+    }
     .home {
         margin-top: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: px 4fr 1fr;
+        grid-template-columns: 1fr 0.8fr;
+        grid-template-rows: 80px 2.5fr 1fr;
         grid-gap: 0px;
         grid-template-areas: "logo img" "text img" "input img";
     }
     .home__logo {
         grid-area: logo;
+        margin-top: 50px;
+        padding: 0;
     }
     .home__hero {
         grid-area: img;
         background-image: url('images/hero-desktop.jpg');
         height: 100vh;
+        background-position: right;
     }
     .home__text {
-        max-width: 300px;
+        width: 400px;
         margin: auto;
         grid-area: text;
     }
